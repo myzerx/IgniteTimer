@@ -1,6 +1,7 @@
 import { useForm } from 'react-hook-form'
 import { FormContainer, MinutesAmountInput, TaskInput } from './style'
 import * as zod from 'zod'
+import { zodResolver } from '@hookform/resolvers/zod'
 
 export function NewCycleForm() {
   const newCycleFormValidationSchema = zod.object({
